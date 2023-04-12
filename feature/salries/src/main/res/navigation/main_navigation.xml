@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/entitlements_fragment">
+
+    <fragment
+        android:id="@+id/entitlements_fragment"
+        android:name="com.azmiradi.salries.entitlements.EntitlementsFragment"
+        android:label="EntitlementsFragment"
+        tools:layout="@layout/fragment_entitlements"
+        />
+
+    <fragment
+        android:id="@+id/insurances_fragment"
+        android:name="com.azmiradi.salries.insurances.InsurancesFragment"
+        android:label="InsurancesFragment"
+        tools:layout="@layout/fragment_insurances"
+        />
+
+    <fragment
+        android:id="@+id/deductions_fragment"
+        android:name="com.azmiradi.salries.deductions.DeductionsFragment"
+        android:label="DeductionsFragment"
+        tools:layout="@layout/fragment_deductions"
+        />
+</navigation>
